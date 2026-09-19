@@ -41,7 +41,7 @@ program
   .description(
     'Git diff for onchain state'
   )
-  .version('0.7.0')
+  .version('0.1.0')
 
 program
   .command('targets')
@@ -564,7 +564,7 @@ function printWhy(
   )
 
   console.log(
-    `WHY 窶・${analysis.requestedWindow}`
+    `WHY —${analysis.requestedWindow}`
   )
 
   console.log(
@@ -574,7 +574,7 @@ function printWhy(
   console.log('')
 
   console.log(
-    `Blocks ${before.blockNumber.toLocaleString()} 竊・${current.blockNumber.toLocaleString()}`
+    `Blocks ${before.blockNumber.toLocaleString()} →${current.blockNumber.toLocaleString()}`
   )
 
   console.log(
@@ -788,7 +788,7 @@ function printWindowInfo(
   )
 
   console.log(
-    `Blocks:    ${before.blockNumber.toLocaleString()} 竊・${current.blockNumber.toLocaleString()}`
+    `Blocks:    ${before.blockNumber.toLocaleString()} →${current.blockNumber.toLocaleString()}`
   )
 }
 
@@ -855,7 +855,7 @@ function printDiff(
 ) {
   console.log('')
   console.log(
-    `DIFF 窶・${since}`
+    `DIFF —${since}`
   )
 
   console.log(
@@ -924,7 +924,7 @@ function printMoneyDiff(
   console.log(
     `  ${money(
       before
-    )} 竊・${money(
+    )} →${money(
       current
     )}`
   )
@@ -955,7 +955,7 @@ function printPpDiff(
   console.log(
     `  ${before.toFixed(
       2
-    )}% 竊・${current.toFixed(
+    )}% →${current.toFixed(
       2
     )}%`
   )
