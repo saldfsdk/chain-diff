@@ -1,7 +1,7 @@
 {
   "name": "chain-diff",
   "version": "1.0.0",
-  "description": "",
+  "description": "Git diff for onchain state",
   "main": "index.js",
   "scripts": {
     "test": "vitest run",
@@ -33,5 +33,11 @@
   },
   "bin": {
     "chain-diff": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
   }
 }
