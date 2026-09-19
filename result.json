@@ -1,0 +1,84 @@
+﻿
+> chain-diff@1.0.0 dev
+> tsx src/index.ts why aave:usdc --since 1m --json
+
+{
+  "target": "aave:usdc",
+  "requestedWindow": "1m",
+  "from": {
+    "blockNumber": 26001213,
+    "timestamp": 1789696355
+  },
+  "to": {
+    "blockNumber": 26001218,
+    "timestamp": 1789696415
+  },
+  "elapsedSeconds": 60,
+  "stateChange": {
+    "liquidity": -5000,
+    "debt": 5181.05330991745,
+    "utilization": 0.00021115213576194947,
+    "supplyApr": 0.000016432490500761787,
+    "borrowApr": 0.000009882872631372663
+  },
+  "activity": {
+    "supplied": 0,
+    "withdrawn": 0,
+    "borrowed": 5000,
+    "repaidUnderlying": 0,
+    "repaidATokens": 0,
+    "netLiquidityFlow": -5000,
+    "eventCount": 1,
+    "events": [
+      {
+        "type": "BORROW",
+        "amount": 5000,
+        "address": "0xCDF0599802a9e203dE7293C045E9AF3620F46Fb0",
+        "txHash": "0x22f35332acc4dd8f59ce8ee859d5fdbbc0d65c6ce365d176c64e39df1ffc50da",
+        "blockNumber": 26001217
+      }
+    ]
+  },
+  "attribution": {
+    "liquidity": {
+      "explainedFlow": -5000,
+      "residual": 0
+    },
+    "debt": {
+      "borrowRepayChange": 5000,
+      "estimatedAccruedInterest": 181.05334386726628,
+      "explainedChange": 5181.053343867266,
+      "residual": -0.00003394981649762485
+    }
+  },
+  "explanation": {
+    "liquidity": {
+      "direction": "decreased",
+      "primaryDrivers": [
+        {
+          "label": "Borrowing",
+          "amount": 5000,
+          "share": 100
+        }
+      ],
+      "offsettingDrivers": []
+    },
+    "debt": {
+      "direction": "increased",
+      "primaryDrivers": [
+        {
+          "label": "New borrowing",
+          "amount": 5000,
+          "share": 96.50547230744928
+        },
+        {
+          "label": "Accrued interest",
+          "amount": 181.05334386726628,
+          "share": 3.494527692550712
+        }
+      ],
+      "offsettingDrivers": []
+    },
+    "confidence": "HIGH"
+  }
+}
