@@ -1,4 +1,4 @@
-﻿# chain-diff
+# chain-diff
 
 Git diff for onchain state.
 
