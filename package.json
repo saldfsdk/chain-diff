@@ -1,6 +1,6 @@
 {
   "name": "chain-diff",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Git diff for onchain state",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,21 @@
     "test:watch": "vitest",
     "build": "tsc",
     "clean": "node scripts/clean.mjs",
-    "prebuild": "npm run clean"
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm test && npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "ethereum",
+    "defi",
+    "aave",
+    "morpho",
+    "onchain",
+    "cli",
+    "blockchain",
+    "analytics"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@morpho-org/blue-sdk": "^6.11.0",
