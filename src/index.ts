@@ -564,7 +564,7 @@ function printWhy(
   )
 
   console.log(
-    `WHY —${analysis.requestedWindow}`
+    `WHY — ${analysis.requestedWindow}`
   )
 
   console.log(
@@ -574,7 +574,7 @@ function printWhy(
   console.log('')
 
   console.log(
-    `Blocks ${before.blockNumber.toLocaleString()} →${current.blockNumber.toLocaleString()}`
+    `Blocks ${before.blockNumber.toLocaleString()} → ${current.blockNumber.toLocaleString()}`
   )
 
   console.log(
@@ -788,7 +788,7 @@ function printWindowInfo(
   )
 
   console.log(
-    `Blocks:    ${before.blockNumber.toLocaleString()} →${current.blockNumber.toLocaleString()}`
+    `Blocks:    ${before.blockNumber.toLocaleString()} → ${current.blockNumber.toLocaleString()}`
   )
 }
 
@@ -855,7 +855,7 @@ function printDiff(
 ) {
   console.log('')
   console.log(
-    `DIFF —${since}`
+    `DIFF — ${since}`
   )
 
   console.log(

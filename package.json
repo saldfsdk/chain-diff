@@ -2,7 +2,7 @@
   "name": "chain-diff",
   "version": "0.1.0",
   "description": "Git diff for onchain state",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "vitest run",
     "dev": "tsx src/index.ts",
@@ -57,5 +57,8 @@
   "homepage": "https://github.com/saldfsdk/chain-diff#readme",
   "bugs": {
     "url": "https://github.com/saldfsdk/chain-diff/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
