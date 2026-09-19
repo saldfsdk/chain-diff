@@ -8,3 +8,5 @@ dist/
 chain-diff.db
 result.json
 patch-*.mjs
+
+*.tgz
